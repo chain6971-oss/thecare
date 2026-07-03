@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>더케어 재가복지센터</title>
+  <!-- SEO 메타 태그 -->
+  <meta name="description" content="부산 사상구 더케어 재가복지센터. 전문 요양보호사가 어르신의 가정을 직접 방문하여 방문요양, 요양등급신청, 인지활동 서비스를 제공합니다.">
+  <meta name="keywords" content="재가복지센터, 방문요양, 요양보호사, 부산, 사상구, 장기요양, 노인돌봄">
+  <meta name="author" content="더케어 재가복지센터">
+
+  <!-- OG 태그 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="더케어 재가복지센터 | 부산 사상구 방문요양">
+  <meta property="og:description" content="전문 요양보호사가 어르신의 가정을 직접 방문하여 돌봄 서비스를 제공합니다.">
+  <meta property="og:url" content="https://더케어복지센터.com">
+
+  <!-- 파비콘 -->
+ <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 상단 헤더 -->
+ <header id="main-header">
+    <div class="logo">더케어 재가복지센터</div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+    <nav id="main-nav">
+      <a href="index.html">센터소개</a>
+      <a href="service.html">서비스안내</a>
+      <a href="recruit.html">채용</a>
+      <a href="resource.html">자료실</a>
+      <a href="contact.html">문의</a>
+    </nav>
+  </header>
+
+  <!-- 히어로 섹션 -->
+  <main>
+    <section class="hero">
+      <h1>어르신의 행복한 일상을<br>저희가 함께합니다</h1>
+      <p>사상구 더케어 재가복지센터는 전문 요양보호사가<br>어르신의 가정을 직접 방문하여 돌봄 서비스를 제공합니다.</p>
+      <a href="tel:010-8976-5815" class="btn">상담 신청하기</a>
+    </section>
+
+    <!-- 서비스 카드 섹션 -->
+    <section class="services">
+      <h2>제공 서비스</h2>
+      <div class="card-wrap">
+        <div class="card">
+          <div class="card-icon">🏠</div>
+          <h3>방문요양</h3>
+          <p>전문 요양보호사가 가정을 방문하여 신체활동 및 일상생활을 지원합니다.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📋</div>
+          <h3>요양등급신청</h3>
+          <p>장기요양등급 신청부터 판정까지 전문가가 함께 도와드립니다.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧠</div>
+          <h3>인지활동</h3>
+          <p>치매 예방 및 인지 기능 유지를 위한 전문 프로그램을 제공합니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 신뢰 지표 섹션 -->
+    <section class="stats">
+      <div class="stat">
+        <span class="stat-number">12+</span>
+        <span class="stat-label">관리 어르신</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">5년+</span>
+        <span class="stat-label">운영 경력</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">전문 자격증 보유</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- 하단 푸터 -->
+  <footer>
+    <p>더케어 재가복지센터 | 부산광역시 사상구 | 대표전화: 010-8976-5815</p>
+  </footer>
+<script>
+    // 스크롤 시 헤더 고정
+    window.addEventListener('scroll', function() {
+      var header = document.getElementById('main-header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // 햄버거 메뉴
+    function toggleMenu() {
+      var nav = document.getElementById('main-nav');
+      nav.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
